@@ -1,0 +1,50 @@
+.titulo {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.titulo h1 {
+    display: block;
+    text-align: center;
+}
+
+.titulo img {
+    display: block;
+    margin: auto;
+}
+
+.formulario-medidas {
+    width: 200px;
+    margin: 0 auto;
+}
+
+label {
+    display: inline-block;
+    clear: left;
+    width: 120px;
+    text-align: left;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+input {
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.bottoms-actions button {
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.botones {
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
