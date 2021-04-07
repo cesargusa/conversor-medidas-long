@@ -16,35 +16,43 @@
             <img height="100" width="100" src="https://www.tynker.com/assets2/asset/51f2fc1336d5776b290000ad.svg">
             <h1>Conversor de Medidas</h1>
         </div>
-        <form>
-            <div class="formulario-medidas">
-                <label>Centimetros:</label><br>
-                <input type="number" id="centimetros" min="0">
-                <br>
-                <label>Milimetros:</label><br>
-                <input type="number" id="milimetros" min="0">
-                <br>
-                <label>Decimetros:</label><br>
-                <input type="number" id="decimetros" min="0">
-                <br>
-                <label>Metros:</label><br>
-                <input type="number" id="metros" min="0">
-                <br>
-                <label>Kilometros:</label><br>
-                <input type="number" id="kilometros" min="0">
-                <div class="botones">
-                    <div class="bottoms-actions">
-                        <button>Borrar Campos</button>
 
-                    </div>
+        <div class="formulario-medidas">
+            <label>Centimetros:</label><br>
+            <input type="number" id="centimetros" min="0">
+            <br>
+            <label>Milimetros:</label><br>
+            <input type="number" id="milimetros" min="0">
+            <br>
+            <label>Decimetros:</label><br>
+            <input type="number" id="decimetros" min="0">
+            <br>
+            <label>Metros:</label><br>
+            <input type="number" id="metros" min="0">
+            <br>
+            <label>Kilometros:</label><br>
+            <input type="number" id="kilometros" min="0">
+            <div class="botones">
+                <div class="bottoms-actions">
+                    <button id="borrar">Borrar Campos</button>
+
                 </div>
-
             </div>
 
+        </div>
+
     </div>
-    </form>
+
 
 </body>
 <script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $("#centimetros").bind("keyup keydown change", function() {
+        document.getElementById('metros').value = document.getElementById('centimetros').value / 100
+        document.getElementById('decimetros').value = document.getElementById('centimetros').value / 10
+
+    });
+</script>
 
 </html>
